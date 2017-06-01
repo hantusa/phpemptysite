@@ -31,20 +31,7 @@ if (empty($ct_comment_01)||is_null($ct_comment_01)){
 	        echo "<Gather action='$url' numDigits='4' finishOnKey='*'>";
 		echo "<Say voice='woman' language='ko-KR'>".$ct_comment_01.".</Say>";
 		echo "<Pause length='2'/>";
-		echo "<Say voice='woman' language='ko-KR'>".$ct_comment_01.".</Say>";
-				echo "<Pause length='2'/>";
-		echo "<Say voice='woman' language='ko-KR'>".$ct_comment_01.".</Say>";
-				echo "<Pause length='2'/>";
-		echo "<Say voice='woman' language='ko-KR'>".$ct_comment_01.".</Say>";
-				echo "<Pause length='2'/>";
-		echo "<Say voice='woman' language='ko-KR'>".$ct_comment_01.".</Say>";
-				echo "<Pause length='2'/>";
-		echo "<Say voice='woman' language='ko-KR'>".$ct_comment_01.".</Say>";
-				echo "<Pause length='2'/>";
-		echo "<Say voice='woman' language='ko-KR'>".$ct_comment_01.".</Say>";
-				echo "<Pause length='2'/>";
-		echo "<Say voice='woman' language='ko-KR'>".$ct_comment_01.".</Say>";
-		echo "<Pause length='2'/>";
+
 
 		echo "</Gather>";
         	
