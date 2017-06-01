@@ -4,11 +4,11 @@ include "./db_connect.php";
 
 $phoneno = $_GET['phoneno'];
 $pushedno = $_GET['pushedno'];
-
+$pushedno =1;
 $user_pushed = $_REQUEST['Digits'];
 			
-	        if ( $user_pushed == '1' )
-	        {	
+	        //if ( $user_pushed == '1' )
+	       // {	
 	          	
 	        		//echo "<Sms to='16472060140'>Text from 1</Sms>";
 	        		echo "<Say voice='woman' language='ko-KR'>일번을 선택했습니다.</Say>";
@@ -16,7 +16,7 @@ $user_pushed = $_REQUEST['Digits'];
 			        echo "<Sms to=".$phoneno.">Text from 1</Sms>";
  
 	        	
-	        }
+	      //  }
 
 
 
