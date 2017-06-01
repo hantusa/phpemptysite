@@ -29,28 +29,16 @@ if (empty($ct_comment_01)||is_null($ct_comment_01)){
 		
 		$user_pushed = $_REQUEST['Digits'];
 	       	echo "<Say voice='woman' language='ko-KR'>".$ct_comment_01.".</Say>";
-        /*
+        
 	        if ( $user_pushed == '1' )
 	        {	
-	          	if (empty($intPhoneNo1)||is_null($intPhoneNo1)){
-	        		echo "<Say voice='woman'>There is no any phone number to connect.</Say>";
-	        		echo "<Say voice='woman'>Good bye!</Say>";
-					echo "<Hangup/>";
-	        	} else
-	        	{
+	          	
 	        		//echo "<Sms to='16472060140'>Text from 1</Sms>";
-	        		
-	        		$url = "RephandleDialCall.php?MemEmail=$MemEmail".htmlspecialchars("&tollfree=$tollfree&htime=$htime");
-	        		echo "<Dial callerId='$MemRepPhoneNo' timeLimit ='$htime'  action='$url' method='GET'>".$intPhoneNo1."</Dial>";
-	        		
-	        		//echo "<Say>connecting to number 1</Say>";
-		        	//echo "<Dial callerId='$MemRepPhoneNo'>";
-		        	//echo "<Number>";
-		        	//echo "$intPhoneNo1";
-		        	//echo "</Number>";
-		        	//echo "</Dial>";
-		        	//echo "<Say>The call failed or the remote party hung up.  Goodbye.</Say>";
-	        	}
+	        		echo "<Say voice='woman' language='ko-KR'>일번을 선택했습니다.</Say>";
+	        		$url = "save.php?phoneno=".$_REQUEST['From']."&pushed=".$user_pushed;
+	        		echo "<Sms to=".$_REQUEST['From']." action='$url' method='GET'>".$intPhoneNo1."을 선택했습니다.</Sms>";
+
+	        	
 	        }
 	        else if ( $user_pushed == '2' )
 	        {       
@@ -120,7 +108,7 @@ if (empty($ct_comment_01)||is_null($ct_comment_01)){
 	        
 	        
 	        }
-            */
+            
 	
    echo "</Response>";
 
