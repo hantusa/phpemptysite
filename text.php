@@ -35,8 +35,8 @@ if (empty($ct_comment_01)||is_null($ct_comment_01)){
 	          	
 	        		//echo "<Sms to='16472060140'>Text from 1</Sms>";
 	        		echo "<Say voice='woman' language='ko-KR'>일번을 선택했습니다.</Say>";
-	        		$url = "save.php?phoneno=".$_REQUEST['From']."&pushed=".$user_pushed;
-	        		echo "<Sms to=".$_REQUEST['From']." action='$url' method='GET'>".$intPhoneNo1."을 선택했습니다.</Sms>";
+	        		$url = "save.php?phoneno=".$_REQUEST['From']."&pushedno=".$user_pushed;
+	        		echo "<Sms to=".$_REQUEST['From']." action='$url' method='GET'>".$user_pushed."을 선택했습니다.</Sms>";
 
 	        	
 	        }
