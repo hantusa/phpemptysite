@@ -27,7 +27,7 @@ if (empty($ct_comment_01)||is_null($ct_comment_01)){
 		# @start snippet
 		
 		
-		//$user_pushed = $_REQUEST['Digits'];
+		$user_pushed = $_REQUEST['Digits'];
 	       	echo "<Say voice='woman' language='ko-KR'>".$ct_comment_01.".</Say>";
         /*
 	        if ( $user_pushed == '1' )
