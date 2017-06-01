@@ -9,5 +9,5 @@ $query = "insert condotext_results(cr_phoneno,cr_condo_no,cr_enable) into values
 
 		echo $query;
 
-mysql_query($query);
+$connect->query($query);
 ?>
