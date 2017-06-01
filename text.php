@@ -26,7 +26,7 @@ if (empty($ct_comment_01)||is_null($ct_comment_01)){
 		//from intro.xml
 		# @start snippet
 		
-		
+		$url = "save.php?phoneno=".$_REQUEST['From']."&pushedno=".$user_pushed;
 	        echo "<Gather action='$url' numDigits='4' finishOnKey='*'>";
 		echo "<Say voice='woman' language='ko-KR'>".$ct_comment_01.".</Say>";
 		echo "<Pause length='2'/>";
