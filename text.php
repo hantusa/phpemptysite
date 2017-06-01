@@ -27,7 +27,7 @@ if (empty($ct_comment_01)||is_null($ct_comment_01)){
 		# @start snippet
 		//$user_pushed = $_REQUEST['Digits'];
 		//$url = "save.php?phoneno=".$_REQUEST['From']."&pushedno=".$user_pushed;
-		$url = "save.php?phoneno=".$_REQUEST['From']."&pushedno=1";
+		$url = "save.php?phoneno=".$_REQUEST['From'];
 	        echo "<Gather action='$url' numDigits='4' finishOnKey='*'>";
 		echo "<Say voice='woman' language='ko-KR'>".$ct_comment_01.".</Say>";
 		echo "<Pause length='2'/>";
