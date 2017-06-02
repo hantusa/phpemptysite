@@ -29,7 +29,7 @@ if (empty($ct_comment)||is_null($ct_comment)){
 		//$url = "save.php?phoneno=".$_REQUEST['From']."&pushedno=".$user_pushed;
 		$url = "save.php?phoneno=".htmlspecialchars($_REQUEST['From']);
 	        echo "<Gather action='$url' numDigits='4' finishOnKey='*'>";
-		echo "<Say voice='woman' language='ko-KR'>".$ct_comment_01.".</Say>";
+		echo "<Say voice='woman' language='ko-KR'>".$ct_comment.".</Say>";
 		echo "<Pause length='2'/>";
 
 
