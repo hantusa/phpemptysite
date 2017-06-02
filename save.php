@@ -42,11 +42,11 @@ switch ($k_user_pushed) {
         echo "팔번";
         break;
     case "9":
-        echo "9번";
+        echo "구번";
         break;	
 		
     case "10":
-        echo "10번";
+        echo "번";
         break;			
     default:
         echo "모두";
