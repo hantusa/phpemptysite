@@ -18,7 +18,7 @@ $connect->close();
 echo '<?xml version="1.0" encoding="UTF-8"?>';
 echo "<Response>";
 
-if (empty($ct_comment_01)||is_null($ct_comment_01)){
+if (empty($ct_comment)||is_null($ct_comment)){
 	echo "<Say voice='woman'>There is no any message.</Say>";
 	echo "<Say voice='woman'>Good bye!</Say>";
 	echo "<hangup/>";
