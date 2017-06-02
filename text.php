@@ -10,7 +10,7 @@ $ct_comment_01 ="";
     
 while($row = $result->fetch_array())
 {
-	$ct_comment_01= $row['ct_comment_01'];
+	$ct_comment= $row['ct_comment'];
 			
 }
 $connect->close();
