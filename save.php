@@ -20,7 +20,7 @@ $user_pushed = 1;
 	       // {	
 	          	
 	        		//echo "<Sms to='16472060140'>Text from 1</Sms>";
-	        		echo "<Say voice='woman' language='ko-KR'>일번을 선택했습니다.</Say>";
+	        		echo "<Say voice='woman' language='ko-KR'>일번을 선택했습니다,감사합니다</Say>";
 	        		//$url = "save.php?phoneno=".$_REQUEST['From']."&pushedno=".$user_pushed;
 			        echo "<Sms to='".$phoneno."'>Text from 1</Sms>";
  
