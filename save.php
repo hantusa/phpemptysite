@@ -3,8 +3,8 @@
 include "./db_connect.php";
 
 $phoneno = $_GET['phoneno'];
-$pushedno = $_GET['pushedno'];
-$pushedno =1;
+//$pushedno = $_GET['pushedno'];
+//$pushedno =1;
 $user_pushed = $_REQUEST['Digits'];
 			
 	        //if ( $user_pushed == '1' )
@@ -21,7 +21,7 @@ $user_pushed = $_REQUEST['Digits'];
 
 
 	
-$query = "insert into condotext_results(cr_phoneno,cr_condo_no,cr_enable)  values('".$phoneno."','".$pushedno."','Y')" ;
+$query = "insert into condotext_results(cr_phoneno,cr_condo_no,cr_enable)  values('".$phoneno."','".$user_pushed."','Y')" ;
 
 		//echo $query;
 
