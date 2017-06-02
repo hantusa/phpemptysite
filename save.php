@@ -10,7 +10,9 @@ header('Content-type: text/xml');
 $phoneno = $_GET['phoneno'];
 //$pushedno = $_GET['pushedno'];
 //$pushedno =1;
-$user_pushed = $_REQUEST['Digits'];
+//$user_pushed = $_REQUEST['Digits'];
+$user_pushed = 1;
+
 			
 	        //if ( $user_pushed == '1' )
 	       // {	
