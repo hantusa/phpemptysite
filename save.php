@@ -1,6 +1,6 @@
 <?php
 
-	//include '../include/dbconn.php';  
+include "./db_connect.php";
 
 	
 	
@@ -32,7 +32,7 @@ $user_pushed = 1;
 	
 $query = "insert into condotext_results(cr_phoneno,cr_condo_no,cr_enable)  values('".$phoneno."','".$user_pushed."','Y')" ;
 
-		echo $query;
+		//echo $query;
 
 $connect->query($query);
 
