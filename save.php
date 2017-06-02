@@ -5,7 +5,7 @@ include "./db_connect.php";
 header('Content-type: text/xml');
 	echo '<?xml version="1.0" encoding="UTF-8"?>';
 
-	echo '<Response>'
+	echo '<Response>';
 		
 $phoneno = $_GET['phoneno'];
 //$pushedno = $_GET['pushedno'];
