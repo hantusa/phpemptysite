@@ -2,6 +2,11 @@
 
 include "./db_connect.php";
 
+header('Content-type: text/xml');
+	echo '<?xml version="1.0" encoding="UTF-8"?>';
+
+	echo '<Response>'
+		
 $phoneno = $_GET['phoneno'];
 //$pushedno = $_GET['pushedno'];
 //$pushedno =1;
@@ -26,4 +31,7 @@ $query = "insert into condotext_results(cr_phoneno,cr_condo_no,cr_enable)  value
 		//echo $query;
 
 $connect->query($query);
+
+	echo '</Response>';
+
 ?>
